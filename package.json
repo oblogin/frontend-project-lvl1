@@ -7,6 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "simple-git-hooks": {
+    "pre-push": "make lint"
+  },
   "bin": {
     "brain-games": "bin/brain-games.js"
   },
@@ -22,5 +25,10 @@
   "homepage": "https://github.com/oblogin/frontend-project-lvl1#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3"
   }
 }
