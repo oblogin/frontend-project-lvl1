@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import {goodBye, randomInteger, greeting} from './helpers.js';
+import { goodBye, randomInteger, greeting } from './helpers.js';
 
-const getRightEvenAnswer = (number) => number % 2 === 0 ? 'yes' : 'no';
+const getRightEvenAnswer = (number) => (number % 2 === 0 ? 'yes' : 'no');
 
 const evenGame = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
